@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Search Bar -->
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search for songs...">
+  <button id="searchBtn">Search</button>
+</div>
+
+  <div class="container">
+    <h1>🎵 My Music Player</h1>
+
+    <!-- Now Playing -->
+    <div class="now-playing">
+      <img id="album-art" src="images/beliver.jpg" alt="Album Art">
+      <div>
+        <h2 id="song-title">Song Title</h2>
+        <p id="song-artist">Artist</p>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <audio id="audio"></audio>
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="play">▶</button>
+      <button id="next">⏭</button>
+      <button id="shuffle">🔀</button>
+      <button id="repeat">🔁</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <input type="range" id="progress" value="0">
+
+    <!-- Playlist -->
+    <h3>Playlist</h3>
+    <ul id="playlist"></ul>
+
+    <!-- Favorites -->
+    <h3>⭐ Favorites</h3>
+    <ul id="favorites"></ul>
+
+    <!-- Recently Played -->
+    <h3>🕒 Recently Played</h3>
+    <ul id="recently-played"></ul>
+
+    <!-- Visitor Counter -->
+    <p id="visitor-counter"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
